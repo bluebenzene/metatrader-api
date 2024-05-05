@@ -11,10 +11,10 @@ logger = logging.getLogger(__name__)
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-MT5_SERVER = config['DEFAULT_MT5']['MT5_SERVER']
-USER_ID = int(config['DEFAULT_MT5']['USER_ID'])
-PASSWORD = config['DEFAULT_MT5']['PASSWORD']
-HOST_IP = config['DEFAULT_MT5']['HOST_IP']
+MT5_SERVER = config['MT5']['MT5_SERVER']
+USER_ID = int(config['MT5']['USER_ID'])
+PASSWORD = config['MT5']['PASSWORD']
+HOST_IP = config['MT5']['HOST_IP']
 
 # Global variables for grpc services
 channel = None

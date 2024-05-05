@@ -11,10 +11,10 @@ logger = logging.getLogger(__name__)
 configparser = configparser.ConfigParser()
 configparser.read('config.ini')
 
-MT4_SERVER = str(configparser['DEFAULT']['MT4_SERVER'])
-USER_ID = int(configparser['DEFAULT']['USER_ID'])
-PASSWORD = str(configparser['DEFAULT']['PASSWORD'])
-HOST_IP = str(configparser['DEFAULT']['HOST_IP'])
+MT4_SERVER = str(configparser['MT4']['MT4_SERVER'])
+USER_ID = int(configparser['MT4']['USER_ID'])
+PASSWORD = str(configparser['MT4']['PASSWORD'])
+HOST_IP = str(configparser['MT4']['HOST_IP'])
 
 # Establish global variables
 channel = None
